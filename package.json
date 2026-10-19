@@ -1,0 +1,19 @@
+{
+  "name": "winbox-clone",
+  "private": true,
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,green \"npm run dev -w server\" \"npm run dev -w web\"",
+    "test": "npm test --workspaces --if-present",
+    "build": "npm run build --workspaces"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

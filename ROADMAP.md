@@ -13,12 +13,12 @@ Satu baris adalah satu issue, dikerjakan dalam satu Pull Request. Satu milestone
 
 - [x] **M0-01** Dokumen rencana: README, ROADMAP, AGENTS.md, DEVLOG, template PR/Issue.
   _Selesai jika:_ semua file ada di `main` dan Eben sudah membacanya.
-- [ ] **M0-02** Buat repo GitHub, milestone M1–M7, issue dari roadmap ini, dan Project board (Todo / Dikerjakan / Selesai).
+- [x] **M0-02** Buat repo GitHub, milestone M1–M7, issue dari roadmap ini, dan Project board (Todo / Dikerjakan / Selesai).
   _Selesai jika:_ setiap baris roadmap punya GitHub Issue dengan ID yang sama.
 
 ## M1 — Halo Router · `v0.1` · target 26 Okt
 
-- [ ] **M1-01** Scaffold monorepo: npm workspaces `server/` (Express + TS) dan `web/` (Vite + React + TS + Tailwind). Perintah `npm run dev` menjalankan keduanya.
+- [x] **M1-01** Scaffold monorepo: npm workspaces `server/` (Express + TS) dan `web/` (Vite + React + TS + Tailwind). Perintah `npm run dev` menjalankan keduanya.
   _Selesai jika:_ halaman web menampilkan hasil `GET /api/v1/health`, dan bagian "Perintah" di AGENTS.md sudah diisi.
 - [ ] **M1-02** Simulator minimal: data router di memori (nama, versi, uptime, CPU, RAM, interface `ether1`–`ether5`, `bridge`, `wlan1`) dan endpoint `GET /api/v1/system/resource`.
   _Selesai jika:_ test Vitest untuk endpoint ini lolos, dan nilai CPU/uptime berubah tiap detik.
