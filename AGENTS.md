@@ -90,4 +90,9 @@ Berlaku sejak M1, untuk setiap halaman.
 
 ## Perintah
 
-Belum ada kode. Issue M1-01 menambahkan perintah `dev`, `test`, dan `build` ke bagian ini.
+Butuh Node.js 22.18 atau lebih baru (server menjalankan file `.ts` langsung lewat Node). Semua perintah dijalankan dari folder root.
+
+- `npm install`: pasang dependency untuk `server/` dan `web/` sekaligus.
+- `npm run dev`: jalankan server API (port 3000) dan web (port 5173) bersamaan. Buka http://localhost:5173.
+- `npm test`: jalankan semua test Vitest. Untuk satu bagian saja: `npm test -w server`.
+- `npm run build`: cek tipe TypeScript, lalu build ke `server/dist` dan `web/dist`.
